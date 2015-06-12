@@ -198,7 +198,7 @@ class StandardOutputWithSigmoid(Layer):
 
 
 def retrieveTrainValidationTest():
-    f = open("/Users/alexs/work_phd/datasets_work/mnist_unpack/mnist.pkl")
+    f = open("mnist.pkl")
     train_set, valid_set, test_set = cPickle.load(f)
     f.close()
     return train_set, valid_set, test_set
@@ -254,7 +254,7 @@ def main():
     nn.trainData(train_set_input, train_set_labels,
                  valid_set_input, valid_set_labels,
                  test_set_input, test_set_labels,
-                 nrOfEpochs=300, batch_size=100)
+                 nrOfEpochs=10, batch_size=100)
 
 
 if __name__ == '__main__':

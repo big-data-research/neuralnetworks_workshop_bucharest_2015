@@ -41,7 +41,7 @@ net1 = NeuralNet(
     update_momentum=0.9,
     regression=False,
     # We only train for 10 epochs
-    max_epochs=1,
+    max_epochs=10,
     verbose=1,
 
     # Training test-set split
