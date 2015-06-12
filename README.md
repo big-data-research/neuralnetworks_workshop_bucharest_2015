@@ -8,4 +8,6 @@ Tutorials
 
 http://deeplearning.net/
 
+Theano
 
+http://deeplearning.net/software/theano/
