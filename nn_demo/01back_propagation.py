@@ -47,7 +47,7 @@ def makeW(rows, columns, start=-2, end=2):
     return w
 
 
-def updates_weights_function(weights, memories, cost_function, learning_rate=0.2, momentum_learning_rate=0.05):
+def updates_weights_function(weights, memories, cost_function, learning_rate=0.02, momentum_learning_rate=0.05):
     gradients = T.grad(cost_function, weights)  # keep in mind len(gradients) == len(weights)
 
     update_lists = []
@@ -254,7 +254,7 @@ def main():
     nn.trainData(train_set_input, train_set_labels,
                  valid_set_input, valid_set_labels,
                  test_set_input, test_set_labels,
-                 nrOfEpochs=10, batch_size=100)
+                 nrOfEpochs=10, batch_size=1000)
 
 
 if __name__ == '__main__':
